@@ -1,20 +1,37 @@
+import React from 'react'
+
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { Image, SafeAreaView, StyleSheet, Text, View } from 'react-native';
 
-export default function App() {
+const  mySelf = () => {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+    <SafeAreaView style={{
+      backgroundColor: '#F9F89B',
+      flex: 1,
+      //justifyContent: 'center',
+      alignItems: 'center'
+    }}>
+      <Image
+      source={{
+        uri:
+        'c:\Users\Skinnnyman\Downloads\WhatsApp Image 2024-10-09 at 00.18.53.png'
+      }}
+      style={{width: 500, height: 500}}
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+      />
+      <Text style={{
+        color: 'black',
+        align: "center",
+        fontSize: 20,
+        fontWeight: 'bold'
+        
+      }}
+      >My  name is Emmanuel</Text>
+      <Text>Educational Backround:  Bsc in Computer Science</Text>
+      <Text>Work Experience:  Software Developer</Text>
+      <Text>Skills:  C++, Python, JavaScript, HTML/CSS</Text>
+      <Text>Interests: Basketball, Debugging code.</Text>
+    </SafeAreaView>
+    );
+}
+export default mySelf
