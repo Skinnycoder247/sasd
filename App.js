@@ -2,7 +2,7 @@ import React from 'react'
 
 import { StatusBar } from 'expo-status-bar';
 import { Image, SafeAreaView, StyleSheet, Text, View } from 'react-native';
-
+const myImg = require("./assets/mepicc.png");
 const  mySelf = () => {
   return (
     <SafeAreaView style={{
@@ -11,14 +11,9 @@ const  mySelf = () => {
       //justifyContent: 'center',
       alignItems: 'center'
     }}>
-      <Image
-      source={{
-        uri:
-        'c:\Users\Skinnnyman\Downloads\WhatsApp Image 2024-10-09 at 00.18.53.png'
-      }}
-      style={{width: 500, height: 500}}
-
-      />
+      <Image source={myImg}
+      style={{width: 500, height: 500, borderRadius: 50, margin: 20,
+      justifyContent: 'center'}}/>
       <Text style={{
         color: 'black',
         align: "center",
