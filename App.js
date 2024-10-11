@@ -1,18 +1,14 @@
 import React from 'react'
-
+import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 import { StatusBar } from 'expo-status-bar';
 import { Image, SafeAreaView, StyleSheet, Text, View } from 'react-native';
 const myImg = require("./assets/mepicc.png");
 const  mySelf = () => {
   return (
-    <SafeAreaView style={{
-      backgroundColor: '#F9F89B',
-      flex: 1,
-      //justifyContent: 'center',
-      alignItems: 'center'
-    }}>
+    <SafeAreaView className="flex-1 items-center justify-center bg-white">
+      <MaterialCommunityIcons name="human-greeting-variant" size={24} color="black" />
       <Image source={myImg}
-      style={{width: 500, height: 500, borderRadius: 50, margin: 20,
+      style={{width: 500, height: 500, borderRadius: 150, margin: 10,
       justifyContent: 'center'}}/>
       <Text style={{
         color: 'black',
